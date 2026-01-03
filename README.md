@@ -17,7 +17,7 @@ A modern and responsive weather application built with HTML, CSS, and JavaScript
 - OpenWeather API
 
 ##  Live Demo
-https://your-site-name.netlify.app
+https://weather-app4408.netlify.app/
 
 ##  Preview
 
