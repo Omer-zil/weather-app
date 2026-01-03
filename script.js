@@ -9,7 +9,7 @@ const cityEl = document.querySelector(".city");
 const tempEl = document.querySelector(".temp");
 const descEl = document.querySelector(".description");
 
-const API_KEY =process.env.API_KEY;
+const apiKey=API_KEY;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -29,7 +29,7 @@ async function getWeather(city) {
 
   try {
     const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
     );
 
     if (!res.ok) {
