@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/favicon.png">
+</head>
+<body>
+  <main class="app">
+    <h1>Weather App</h1>
+
+  <div class="animated-text">
+     <p>Check the weather in your city!</p>
+  </div>
+
+    <!-- Search form -->
+    <form class="search">
+      <input
+        type="text"
+        placeholder="🔍 Enter city name"
+        id="cityInput"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Unit toggle button -->
+    <div class="toggle">
+      <button id="unitToggle">Show °F</button>
+    </div>
+
+    <!-- Loading indicator -->
+    <p class="loading hidden2">Loading...</p>
+
+    <!-- Error message -->
+    <p class="error hidden"></p>
+
+    <!-- Weather display -->
+    <div class="weather hidden">
+      <h2 class="city"></h2>
+      <img class="icon" src="image/round-icons-DNZIEmtSU_s-unsplash.svg" alt="Weather icon" >
+      <p class="temp"></p>
+      <p class="description"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
