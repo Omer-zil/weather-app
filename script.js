@@ -9,7 +9,7 @@ const cityEl = document.querySelector(".city");
 const tempEl = document.querySelector(".temp");
 const descEl = document.querySelector(".description");
 
-const API_KEY ="0e82fafa451da87e4e2c7c38ecd9edce";
+const API_KEY =process.env.API_KEY;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
